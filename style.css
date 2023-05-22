@@ -1,0 +1,274 @@
+body{
+    height: 300vh;
+    padding: 0px;
+}
+
+
+
+#header{
+    background-color: rgb(161, 51, 32);
+    display: flex; /*работа с экраном*/
+    width: 99%;
+    height: 8vh;
+    justify-content: center; /*расположение на экране*/
+    align-items: center;
+    position: fixed; 
+    top: 0px;
+    z-index: 5;
+    
+}
+#header p{
+    margin-left: 50px;
+    margin-right: 50px; 
+    font-size: larger;
+}
+#header P:hover{
+    color: black;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+#main{ 
+    width: 100%;
+    height: 100vh;
+    background-image: url("picture/fon1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 
+}
+#main p{
+    position: absolute;    
+    top: 20%;
+    left: 8%;
+    font-size: 50px;
+    color: rgb(59, 159, 241);
+}
+@font-face {
+    font-family: shrift;
+    src: url(Lora-Italic-VariableFont_wght.ttf);
+}
+
+#facts{
+    background-color: rgb(20, 107, 220);
+    height: 150vh;
+    padding-top: 100px;
+}
+#facts h1{
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+}
+#container{
+   
+    width: 75%;
+    height: 120vh;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.block{
+    width: 45%;
+    height: 352px;
+    background-color: bisque;
+}
+.block img{
+    width: 270px;
+    height: 270px;
+    float: left;
+    margin: 10px;
+    border: 5px solid gray;
+
+}
+.block p{
+    font-size: 20px;
+}
+#games{
+    width: 99.5%;
+    height: 90vh;
+    border: 5px solid palevioletred;
+    box-shadow: 0 4px 5px 0;
+    background-image: url(picture/monitor.png);
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    background-position: 400px 80px;
+    
+    
+}
+#container_buttons{
+    position: absolute;
+    top: 333.4%;
+    left: 21.5%;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+
+}
+#container_buttons button{
+    font-size: 30px;
+}
+
+#author{
+    width: 70%;
+    margin: 15%;
+    height: 70vh;
+    margin-top: 50px;
+    display: flex;
+}
+#text.author{
+    width: 50%;
+    height: 100%;
+}
+#author img{
+    width: 50%;
+}
+#text.autor ul{
+    font-family: lora;
+    font-size: 30px;
+}
+#footer{
+    background-color:  rgb(161, 51, 32);
+    width: 99,6%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#container_social img{
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s ease-in-out;
+    
+}
+#footer p{
+    font-size: large;
+}
+#container_social{
+    display: flex;
+    justify-content: space-around;
+    width: 8%;
+}
+#container_social img:hover{
+    transform: translateY(-15px) 
+}
+@keyframes pulsing {
+    0%{transform: scale(0.5, 0.5);}
+    50%{transform: scale(1, 1);}
+    100%{transform: scale(0.5, 0.5);}    
+}
+#cr{
+    animation: pulsing 2s infinite
+}
+a{
+    text-decoration: none;
+}
+
+#guess_number{
+    background-color: aqua;
+    display: none;
+}
+#game_clicker{
+    background-size:100% 100%;
+    background-color: rgb(255, 8, 0);
+    display: none;
+}
+#game_dinosaur{
+    background-color: rgb(229, 255, 0);
+    display: none;
+}
+.field_game{
+    width: 49%;
+    height: 66%;
+    margin-left: 27.2%;
+    margin-top: 6.5%;
+}
+#rules_guess_number{
+    font-size: 30px;
+    padding-top: 15%;
+    text-align: center;
+}
+#rules_guess_number button{
+    background-color: rgb(50, 98, 202);
+    font-size: 25px;
+}
+#field_guess_number{
+    display: none;
+}
+#field_guess_number img{
+    width: 40%;
+    height: 60%;
+    
+}
+#field_guess_number p{
+    font-size: 26px;
+    text-align: center;
+}
+#field_guess_number input{
+    font-size: 30px;
+    width: 85px;
+    text-align: center;
+    margin-top: 15%;
+}
+#fabric{
+    width: 16%;
+    height: 8%;
+    background-color: rgb(235, 20, 13);
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    filter: grayscale(100%)
+}
+#fabric img{
+    width: 50px;
+    height: 50px;
+}
+#container_field_clicker{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.shop{
+    width: 15%;
+    height: 100%;
+    
+    
+}
+.shop div{
+    width: 100;
+    height: 25%;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.center_box{
+    width: 15%;
+    text-align: center;
+    
+}
+.center_box p{
+  font-size: 40px;
+}
+#center_box img{
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+}
+#center_box img:active{
+    width: 205px;
+    height: 205px;
+}
+.left{
+  background-size:100% 100% ;
+  background-repeat: no-repeat;
+
+}
+  
+
+.right{
+    background-size:100% 100% ;
+    background-repeat: no-repeat;
+    
+}

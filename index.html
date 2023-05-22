@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header"> 
+        <a href="#main"><p>Главная</p></a>
+        <a href="#facts"><p>Факты</p></a>
+        <a href="#games"><p>Игры</p></a>
+        <a href="#author"><p>О разработчике</p></a>
+    </div>
+    <div id="main"><a name="main"></a>
+        <p>Когда игра заканчивается, король и пешка падают в одну и ту же коробку 
+            <img src="picture/cr.png" id="cr">
+        </p>
+
+    </div>
+    <a name="facts"></a>
+    <div id="facts">
+      <h1> Интересные факты об наших играх</h1>
+      <div id="container" >
+         <div id="block1" class="block">
+            <img src="picture/saper.png">
+            <h2> Величайший игрок в истории??</h2>
+            <p> Новый мировой рекорд по прохождению сапёра!
+                Абдулл Абдерхамович прошел игру на сложности "сложная" за 49.38 секунд, побив 
+                прошлый рекорд Маната Жубдуровича составляющий 58 секунд. Рекордосмену предоставлены
+                награды в виде золотой медали с эмблемой сапёра, а также 3 пары новейших титановых глазных линз.
+            </p>
+
+         </div>
+         <div id="block2" class="block">
+            <img src="picture/st.png">
+            <h2>Открытия на территории чернобыльской АЗС </h2>
+            <p>Парень в возрасте 25 лет после игры в S.T.A.L.K.E.R решил проверить на себе 
+                игровой сюжет, после чего отправился на местo великой трагедии, там им было
+                обнаруженго множество затерянных радиоактивных капсул.
+    
+            </p>
+
+         </div>
+         <div id="block3" class="block">
+            <img src="picture/du.png">
+            <h2> Поклонникам Duke Nukem пришлось ждать продолжения целую вечность</h2>
+            <p>с даты выхода Duke Nukem 3D в 1996 году. Duke Nukem Forever был первоначально анонсирован в 1997 году,
+                  но разработчики игры потерпели ряд крупных неудач, включая серьезную ошибку в коде, из-за срыва сроков
+                на разработчика 3D Realms подал в суд издатель Take-Two Interactive. И деньги ушли не на дальнейшую
+                разработку, а на судебные тяжбы.</p>
+                 
+         </div>
+         <div id="block4" class="block">
+           <img src="picture/mi.png">
+           <h2> Когда дело дошло до бета-версии Minecraft</h2>
+          <p> в 2010 году, в ходе тестирования зарегистрировалось более 10 миллионов пользователей, чтобы посмотреть,
+            что это за игра такая и с чем ее едят. Настолько идея была свежа и оригинальна.
+           Ажиотаж, вызванный попыткой опробовать бэтку игры, и стало причиной того, что Minecraft получил мировой рекорд
+            Гиннесса как самая популярная бета-версия видеоигры в мире и за всю историю индустрии. Поделом, скажем мы вам!
+</p>
+         </div>
+      </div>
+    </div>
+    <a name="games"></a>
+    <div id="games">
+       <div id="container_buttons">
+        <button onclick="guess_number()"> Угадай число </button>
+        <button onclick="game_clicker()"> Кликер </button>
+        <button onclick="game_dinosaur()"> Динозаврик </button>
+         <div id="button_off">
+          <button onclick="button_off()"> /!\ </button>
+        
+         </div>
+        
+
+       </div>
+    
+    
+     <div id="guess_number" class="field_game">
+        <div id="rules_guess_number">
+          <h1>Правила игры</h1>
+          <p>Испытай же удачу!</p>
+          <p>Угадай число от 1 до 100</p>
+          <p>Сделай это быстрее всех, используя минимальное число попыток</p>
+          <button onclick="start_game_number()">Играть</button>
+        </div>
+        <div id="field_guess_number">
+          <p id="prompt">Ну давай, попробуй угадай</p>
+          <input placeholder="число" id="answer_user">
+          <button onclick="accept_answer()">Принять</button>
+          <img src="picture/cat.png">
+      </div>
+        
+     </div>
+     <div id="game_clicker" class="field_game">
+      <div id="fabric" onclick="buy_fabric()">
+        <img src="picture/farmer.png">
+        <p id="count_fabric">2</p>
+        <p id="cost_fabric">10</p>
+        <p>🥔</p>
+      </div>
+
+      <div id="container_field_clicker">
+         <div class="shop">
+          <div class="left" onclick="buy(1)"><p class="cost_element">10</p><p>🥔</p></div>
+          <div class="left" onclick="buy(2)"><p class="cost_element">155</p><p>🥔</p></div>
+          <div class="left" onclick="buy(3)"><p class="cost_element">1555</p><p>🥔</p></div>
+          
+          
+         </div>
+         <div id="center_box">
+          <p id="count_money"> 0🥔 </p>
+          <img src="picture/potatoes.png" onclick="candyclicker()" id="potato">
+         </div>
+         <div class="shop">
+          <div class="right" onclick="buy(4)"><p class="cost_element">10</p><p>🥔</p></div>
+          <div class="right" onclick="buy(5)"><p class="cost_element">11</p><p>🥔</p></div>
+          <div class="right" onclick="buy(6)"><p class="cost_element">12</p><p>🥔</p></div></div>
+        </div>
+      </div>
+      
+    
+    <div id="game_dinosaur" class="field_game">
+      <canvas id="canvas"></canvas>
+     </div> 
+    </div>
+
+
+
+
+
+    <a name="author"></a>
+      <div id="author">
+        <div id="text.author">
+        <h1> О разработчике</h1>
+        <h2> Ксендзов Савелий Александрович</h2>
+            <li>14 годиков</li>
+            <li>тренер по бегу</li>
+            <li>+375(66)666-66-66</li>
+            <li>пристрастие к красному цвету</li>
+            <li>а что еще нужно знать обо мне?</li>
+        </ul>
+        </div>
+        <img src="picture/su.png">
+      </div>
+      <div id="footer">
+        <p>Доступно не для всех</p>
+        <p>Нью-Йорк, 2021</p>
+        <p>Разработано юным гением</p>
+       <div id="container_social">
+        <a href="https://t.me/spiengel" target="_blank" title="@spiengel"><img src="picture/tg.png"></a>
+        <a href="https://instagram.com/spiengel?igshid=YmMyMTA2M2Y=" target="_blank" title="@spiengel"><img src="picture/inst.png"></a>
+       </div>
+      </div>
+      
+
+     <script src="script.js"></script>
+     <script src="game_3/script2.js"></script>
+
+</body>
+</html>
